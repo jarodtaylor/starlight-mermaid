@@ -1,6 +1,7 @@
 // @ts-check
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
+import mdx from "@astro/mdx";
 import { rehypeMermaid } from "@beoe/rehype-mermaid";
 
 // https://astro.build/config
@@ -26,6 +27,7 @@ export default defineConfig({
       ],
       customCss: ["./src/styles/custom.css"],
     }),
+    mdx(),
   ],
   markdown: {
     rehypePlugins: [
