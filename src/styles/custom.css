@@ -1,0 +1,28 @@
+html[data-theme="light"] .beoe-dark {
+  display: none;
+}
+
+html[data-theme="dark"] .beoe-light {
+  display: none;
+}
+
+.beoe svg {
+  /* undo global styles */
+  .node .label {
+    line-height: 1.2;
+  }
+
+  /* primitive dark mode */
+  .flowchart-link {
+    stroke: var(--sl-color-white) !important;
+  }
+
+  .marker {
+    stroke: var(--sl-color-white);
+    fill: var(--sl-color-white) !important;
+  }
+
+  .node-labels {
+    fill: var(--sl-color-white);
+  }
+}
